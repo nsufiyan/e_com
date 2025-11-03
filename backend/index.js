@@ -1,11 +1,11 @@
 const express = require("express");
 const server = express();
+const PORT = process.env.PORT
 
 
 
 
 
-
-server.listen(4000, () => {
-    console.log("server started at 4000")
+server.listen(PORT, () => {
+    console.log(`server started at ${PORT}`)
 })
