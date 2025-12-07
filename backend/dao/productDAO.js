@@ -3,7 +3,7 @@ const { Product, Stock } = require("../model");
 const addProduct = async (data) => {
   try {
     let product = await Product.create(data);
-
+    console.log(product)
     await Stock.create({ product: product?._id, qty: 0 });
     return product;
   } catch (err) {
