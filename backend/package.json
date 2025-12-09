@@ -1,25 +1,21 @@
 {
-  "name": "ecom_project",
+  "name": "b4-major-project-1",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon index.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nsufiyan/e_com.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/nsufiyan/e_com/issues"
-  },
-  "homepage": "https://github.com/nsufiyan/e_com#readme",
   "description": "",
   "dependencies": {
+    "connect-mongodb-session": "^5.0.0",
+    "cors": "^2.8.5",
     "dotenv": "^17.2.3",
     "express": "^5.1.0",
+    "express-session": "^1.18.2",
     "mongoose": "^8.19.2",
     "multer": "^2.0.2"
   }
