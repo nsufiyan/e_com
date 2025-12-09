@@ -21,7 +21,13 @@ const orderSchema = new mongoose.Schema(
     },
     status: {
       type: String,
-      enum: ["packed", "on the way", "delivered", "delivery failed"],
+      enum: [
+        "packed",
+        "on the way",
+        "delivered",
+        "delivery failed",
+        "cancelled",
+      ],
       default: "packed",
     },
     coupon: {
@@ -32,6 +38,11 @@ const orderSchema = new mongoose.Schema(
       type: mongoose.Schema.Types.ObjectId,
       ref: "user",
     },
+    cost: Number,
+    expectedBy: { type: Date },
+    rating: {
+      type: Number,
+    }
   },
   {
     timestamps: true,

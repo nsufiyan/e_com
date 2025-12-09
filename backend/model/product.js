@@ -21,6 +21,10 @@ const productSchema = new mongoose.Schema(
         label: String,
       },
     ],
+    vendor: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "user",
+    },
   },
   {
     timestamps: true,
